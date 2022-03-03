@@ -1,4 +1,3 @@
-# data-structures-and-algorithms
 
 # Code challenges
 
@@ -9,5 +8,15 @@ This repository in created to solve all code challenges of advanced python 401 c
 ### Table of content
 | Code challenge | Folder link |
 | ----------- | ----------- |
-| Class 01 ||
+| Class 01 | |
 | Class 02 | |
+
+
+- pull request link for code challenge 1 :
+
+[preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/pull/1)
+
+- pull request link for code chalenge 2 :
+
+[preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/pull/2)
+
