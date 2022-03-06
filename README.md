@@ -10,6 +10,7 @@ This repository in created to solve all code challenges of advanced python 401 c
 | ----------- | ----------- | ----------- |
 | Class 01 | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code-challenge01/CODE.md) | [preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/pull/1) |
 | Class 02 | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code-challenge02/CODE.md) | [preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/pull/2) |
+| Class 03 |  | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/pull/3) |
 
 
 
