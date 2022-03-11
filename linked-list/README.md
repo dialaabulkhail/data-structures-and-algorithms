@@ -1,24 +1,13 @@
+# Implementation: Singly Linked Lists
+A Linked list is a sequence of Nodes, each node(is devided into two parts) one contains data item and the other contains the reference (an address )of the next node.
+
 # Singly linked lists
 singly linked lists consist of nodes in which each node has only one adress(next) that points to the next node, each node contains also a value.
 
 ## Challenge
 - Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
 - Create a Linked List class, include a head property, an empty Linked List should be created.
-- The class should contain the following methods
-insert
-Arguments: value
-Returns: nothing
-Adds a new node with that value to the head of the list with an O(1) Time performance.
-includes
-Arguments: value
-Returns: Boolean
-Indicates whether that value exists as a Node’s value somewhere within the list.
-to string
-Arguments: none
-Returns: a string representing all the values in the Linked List, formatted as:
-```
-"{ a } -> { b } -> { c } -> NULL"
-```
+
 
 Testing: 
 1. Can successfully instantiate an empty linked list
@@ -31,8 +20,14 @@ Testing:
 
 
 ## Approach & Efficiency
-- The big O notation of the inserted node/ head node for time is O(1)
-and with O(1) for space.
-- The big O notation for the linked list for time is O(n), and for space its O(1)
+- The insert method have big O(1), because we add one node each time at the begining.
+- The include method have O(n) because we used while loop to iterate through the list.
+- The to_str method have O(n) because we used while loop to iterate through the list.
 
 ## API 
+- insert method --> Adds a new node with that value to the head of the list with an O(1) Time performance.
+- include method --> Indicates whether that value exists as a Node’s value somewhere within the list.
+- to_string method --> Returns: a string representing all the values in the Linked List, formatted as:
+```
+"{ a } -> { b } -> { c } -> NULL"
+```
