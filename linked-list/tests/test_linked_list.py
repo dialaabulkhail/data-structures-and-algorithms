@@ -1,5 +1,3 @@
-from os import link
-import pytest
 from linked_list.linked_list import LinkedList,Node
 
 
@@ -33,7 +31,6 @@ def test_head_to_first():
     assert linkedlist.head.next.value == "second"
 
 
-
 """
 To test the includes method we should create a list that takes all nodes coming from insert method
 """
@@ -59,4 +56,3 @@ def test_if_value_not_included():
 
 def test_str():
     assert linkedlist.__str__() == "2 -> two -> 1 -> one -> NULL"
-
