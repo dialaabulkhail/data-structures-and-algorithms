@@ -3,6 +3,9 @@
 This class is used as a form for creating new nodes within the linked list.
 it has two arguments: value of the node, and the adress of next node.
 """
+from platform import node
+
+
 class Node:
     def __init__(self, value):
         self.value = value
@@ -56,3 +59,41 @@ class LinkedList:
             output += "NULL"
 
         return output
+
+
+    ############### Code challenge 6 ###############
+    """
+    Append method: appends the argument value to the end of the linked list
+    """
+    def append(self, value):
+        current = self.head
+        while(current):
+            if current.next is None:
+                current.next = Node(value)
+                return self.__str__()
+            else:
+                current = current.next
+            
+        self.head = Node(value)
+        return self.__str__()
+
+
+    """
+    insert_before method adds a new node with the value immediately before the first node that has the value specified
+    """
+    def insert_before(self, value, new_value):
+        
+
+
+        
+
+
+if __name__ == "__main__":
+    ll = LinkedList()
+    values = [1,3,2,5,6]
+    for i in values:
+        ll.insert(i)
+    # ll.insert_before(2,10)
+    print(ll.insert_before(2,10))
+
+

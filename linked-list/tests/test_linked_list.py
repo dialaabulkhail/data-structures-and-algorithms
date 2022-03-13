@@ -54,4 +54,4 @@ def test_if_value_not_included():
 
 
 def test_str():
-    assert linkedlist.__str__() == "2 -> two -> 1 -> one -> NULL"
+    assert linkedlist.__str__() == "2 -> two -> 1 -> one -> NULL"    
