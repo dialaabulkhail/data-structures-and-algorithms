@@ -78,11 +78,52 @@ class LinkedList:
         return self.__str__()
 
 
+
     """
-    insert_before method adds a new node with the value immediately before the first node that has the value specified
+    insert_before method -> adds a new node with the value immediately before the first node that has the value specified
     """
     def insert_before(self, value, new_value):
+        if self.includes(value):
+            current = self.head
         
+            previous = None
+            while(current):
+                if current.value == value:
+                    node = Node(new_value)
+                    node.next = current
+                    if previous:
+                        previous.next = node
+                    
+                    else:
+                        self.head = node
+                    return self.__str__()
+                previous = current
+                current = current.next
+        
+        else:
+            return "Invalid value"
+
+
+
+    """
+    insert_after method -> adds a new node with the given new value immediately after the first node that has the value specified
+    """
+    def insert_after(self, value, new_value): 
+        if self.includes(value):
+            current = self.head
+
+            while(current):
+                if current.value == value:
+                    node = Node(new_value)
+                    node.next = current.next
+                    current.next = node
+                    return self.__str__()
+                current = current.next
+
+        else:
+            return "Invalid value"      
+
+                            
 
 
         
@@ -94,6 +135,6 @@ if __name__ == "__main__":
     for i in values:
         ll.insert(i)
     # ll.insert_before(2,10)
-    print(ll.insert_before(2,10))
+    print(ll.insert_after(2,10))
 
 
