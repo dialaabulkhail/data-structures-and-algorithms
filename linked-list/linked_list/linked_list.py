@@ -56,3 +56,4 @@ class LinkedList:
             output += "NULL"
 
         return output
+

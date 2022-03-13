@@ -2,7 +2,6 @@ from linked_list.linked_list import LinkedList,Node
 
 
 
-
 def test_empty_linkedlist():
     linkedlist = LinkedList()
     expected = None
