@@ -31,3 +31,15 @@ Testing:
 ```
 "{ a } -> { b } -> { c } -> NULL"
 ```
+_____________________________________________
+## Whiteboard process of Append method
+**Append method: appends the argument value to the end of the linked list.**
+![](./append.jpg)
+_____________________________________________
+## Whiteboard process of insert_before method
+**insert_before method -> adds a new node with the value immediately before the first node that has the value specified.**
+![](./insert_before.jpg)
+_____________________________________________
+## Whiteboard process of insert_after method
+**insert_after method -> adds a new node with the given new value immediately after the first node that has the value specified.**
+![](./insert_after.jpg)
