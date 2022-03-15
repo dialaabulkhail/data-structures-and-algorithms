@@ -45,4 +45,5 @@ _____________________________________________
 ![](./insert_after.jpg)
 _____________________________________________
 ## Whiteboard process of linked-list-kth method
-![]()
+**khFromEnd method -> Return the node’s value that is k places from the tail of the linked list.**
+![](./kh_method.jpg)
