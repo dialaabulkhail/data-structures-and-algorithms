@@ -14,6 +14,7 @@ This repository in created to solve all code challenges of advanced python 401 c
 | Class 04 | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code-challenge04/CODE.md ) | interview |
 | Linked List | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/tree/main/linked-list ) |  |
 | Linked List insertions| | [preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/pull/7) |
+| Linked List kth || [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/pull/8) |
 
 
 
