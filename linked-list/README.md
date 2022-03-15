@@ -43,3 +43,6 @@ _____________________________________________
 ## Whiteboard process of insert_after method
 **insert_after method -> adds a new node with the given new value immediately after the first node that has the value specified.**
 ![](./insert_after.jpg)
+_____________________________________________
+## Whiteboard process of linked-list-kth method
+![]()
