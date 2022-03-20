@@ -31,19 +31,67 @@ Testing:
 ```
 "{ a } -> { b } -> { c } -> NULL"
 ```
-_____________________________________________
-## Whiteboard process of Append method
+__________________________________
+
+# Append method
+
+## Challenge Summary
 **Append method: appends the argument value to the end of the linked list.**
+
+## Whiteboard Process
 ![](./append.jpg)
+
+## Approach & Efficiency
+Time --> O(n)
+space --> O(1)
+
 _____________________________________________
-## Whiteboard process of insert_before method
+
+# insert_before method
+
+## Challenge Summary
 **insert_before method -> adds a new node with the value immediately before the first node that has the value specified.**
+
+## Whiteboard Process
 ![](./insert_before.jpg)
+
+## Approach & Efficiency
+Time --> O(n)
+space --> O(1)
+
 _____________________________________________
-## Whiteboard process of insert_after method
+
+# insert_after method
+
+## Challenge Summary
 **insert_after method -> adds a new node with the given new value immediately after the first node that has the value specified.**
+
+## Whiteboard Process
 ![](./insert_after.jpg)
+
+## Approach & Efficiency
+Time --> O(n)
+space --> O(1)
+
 _____________________________________________
-## Whiteboard process of linked-list-kth method
+
+
+# linked-list-kth method
+
+## Challenge Summary
 **khFromEnd method -> Return the node’s value that is k places from the tail of the linked list.**
+
+## Whiteboard Process
 ![](./kh_method.jpg)
+
+## Approach & Efficiency
+length() method :
+Time --> O(n)
+space --> O(1)
+
+kthFromEnd() method:
+Time --> O(n)
+space --> O(1)
+
+## Solution
+to run the code you can have a list of values and loop through them with one of the insertion methods to create a linked list, after that you can print the kth from end method with the index that you want and it will print the index's value starting counting from the end of the linked list.

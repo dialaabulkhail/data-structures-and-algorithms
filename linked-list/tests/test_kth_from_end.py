@@ -1,3 +1,4 @@
+import pytest
 from linked_list.linked_list import LinkedList
 
 linkedlist = LinkedList()
@@ -24,9 +25,11 @@ def test_k_equals_length():
 """
 Where k is not a positive integer
 """
+## test of negative is changed to be an exception
 def test_negative_k():
-    assert 4 == linkedlist.kthFromEnd(-2)
-    assert 2 == linkedlist.kthFromEnd(-3)
+    with pytest.raises(Exception):
+        linkedlist.kthFromEnd(-2)
+        linkedlist.kthFromEnd(-99)
 
 
 """

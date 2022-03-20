@@ -149,7 +149,8 @@ class LinkedList:
             return "Value is out of range!"
 
         if k < 0:
-            result = abs(k) -1
+            #exception added
+            raise Exception("K is a negative value")
              
         else:
             result = k 
@@ -165,11 +166,22 @@ class LinkedList:
             
 if __name__ == "__main__":
     ll = LinkedList()
-    values = [12,33,50,45,100]
-    for i in values:
-        ll.insert(i)
+    ll.insert(1)
+    ll.insert(2)
+    ll.insert(3)
+    ll.insert(4)
+    ll.insert(5)
 
     print(ll.length())
+    print(ll.kthFromEnd(0))
+    print(ll.kthFromEnd(1))
     print(ll.kthFromEnd(2))
+    # output = 
+    5
+    4
+    3
+    ### kth method returns the k value form end 
+
+    
 
 
