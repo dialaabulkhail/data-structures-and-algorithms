@@ -161,6 +161,25 @@ class LinkedList:
             
              
 
+    """
+    zipLists method --> return a new list of merging two lists together, each node of each list points to the node that has its index of the other list
+    """
+    def zipLists(self, list1, list2):
+        list1_current = list1.head
+        list2_current = list2.head
+
+        while list1_current is not None and list2_current is not None: 
+            list1_next = list1_current.next
+            list2_next = list2_current.next
+            
+            list2_current.next = list1_next
+            list1_current.next = list2_current
+
+            list1_current = list1_next
+            list2_current = list2_next
+
+        return self.__str__()
+
 
             
 if __name__ == "__main__":
@@ -172,4 +191,18 @@ if __name__ == "__main__":
     print(ll.length())
     print(ll.kthFromEnd(2))
 
+### zipped lists
+    list1 = LinkedList()
+    list2 = LinkedList()
+
+    list1.append(1)
+    list1.append(2)
+    list1.append(3)
+    list2.append(10)
+    list2.append(11)
+    list2.append(12)
+
+    print(list1)
+    print(list2)
+    print(list1.zipLists(list1 , list2 ))
 

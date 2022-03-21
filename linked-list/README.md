@@ -47,3 +47,16 @@ _____________________________________________
 ## Whiteboard process of linked-list-kth method
 **khFromEnd method -> Return the node’s value that is k places from the tail of the linked list.**
 ![](./kh_method.jpg)
+
+_____________________________________________
+# zipLists method
+
+## Challenge Summary
+**zipLists method -> Zips the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the the zipped list.**
+
+## Whiteboard Process
+![](./linked_list_zip.jpg)
+
+## Approach & Efficiency
+Time --> O(n)
+space --> O(1)
