@@ -145,20 +145,25 @@ class LinkedList:
     """                        
     def kthFromEnd(self, k):
 
-        if k >= self.length():
+        ll_length = self.length()
+
+        if k >= ll_length:
             return "Value is out of range!"
 
         if k < 0:
             #exception added
             raise Exception("K is a negative value")
-             
-        else:
-            result = k 
 
+ 
+             
         current = self.head
-        for i in range(result):
+        while(current):
+            if k == ll_length - 1 :
+                return current.value
+            
             current = current.next
-        return current.value
+            ll_length = ll_length - 1
+        
             
              
 
@@ -166,21 +171,16 @@ class LinkedList:
             
 if __name__ == "__main__":
     ll = LinkedList()
-    ll.insert(1)
-    ll.insert(2)
-    ll.insert(3)
-    ll.insert(4)
-    ll.insert(5)
+    ll.append(1)
+    ll.append(2)
+    ll.append(3)
+    ll.append(4)
+# [1,2,3,4]
 
-    print(ll.length())
     print(ll.kthFromEnd(0))
     print(ll.kthFromEnd(1))
     print(ll.kthFromEnd(2))
-    # output = 
-    5
-    4
-    3
-    ### kth method returns the k value form end 
+ # kth method returns the k value form end --> 4, 3, 2
 
     
 

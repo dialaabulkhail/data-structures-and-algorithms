@@ -1,11 +1,24 @@
+from os import link
 import pytest
 from linked_list.linked_list import LinkedList
 
 linkedlist = LinkedList()
 values = [1,3,2,4,5]   #[5,4,2,3,1]
 for value in values:
-    linkedlist.insert(value)
+    linkedlist.append(value)
     linkedlist.length()
+
+
+"""
+this test is to make sure that the method returns the kth value from end
+"""
+def test_return_kth_value():
+    assert 5 == linkedlist.kthFromEnd(0)
+    assert 4 == linkedlist.kthFromEnd(1)
+    assert 2 == linkedlist.kthFromEnd(2)
+    assert 3 == linkedlist.kthFromEnd(3)
+    assert 1 == linkedlist.kthFromEnd(4)
+
 
 
 """
