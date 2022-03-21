@@ -123,18 +123,65 @@ class LinkedList:
         else:
             return "Invalid value"      
 
-                            
 
 
+    """
+    This method returns the length of the linked list, which will be used in the kthFromEnd mehtod
+    """
+    def length(self):
+        count_length = 0
+        current = self.head
         
+        while(current):
+            count_length +=1 
+            current = current.next
+            
+        return count_length
 
 
+
+    """
+    kthFromEnd method is used to return the node's value that is k places from the tail of the linked list.
+    """                        
+    def kthFromEnd(self, k):
+
+        ll_length = self.length()
+
+        if k >= ll_length:
+            return "Value is out of range!"
+
+        if k < 0:
+            #exception added
+            raise Exception("K is a negative value")
+
+ 
+             
+        current = self.head
+        while(current):
+            if k == ll_length - 1 :
+                return current.value
+            
+            current = current.next
+            ll_length = ll_length - 1
+        
+            
+             
+
+
+            
 if __name__ == "__main__":
     ll = LinkedList()
-    values = [1,3,2,5,6]
-    for i in values:
-        ll.insert(i)
-    # ll.insert_before(2,10)
-    print(ll.insert_after(2,10))
+    ll.append(1)
+    ll.append(2)
+    ll.append(3)
+    ll.append(4)
+# [1,2,3,4]
+
+    print(ll.kthFromEnd(0))
+    print(ll.kthFromEnd(1))
+    print(ll.kthFromEnd(2))
+ # kth method returns the k value form end --> 4, 3, 2
+
+    
 
 
