@@ -154,8 +154,6 @@ class LinkedList:
             #exception added
             raise Exception("K is a negative value")
 
- 
-             
         current = self.head
         while(current):
             if k == ll_length - 1 :
@@ -164,10 +162,28 @@ class LinkedList:
             current = current.next
             ll_length = ll_length - 1
         
+    
+
+    """
+    zipLists method --> return a new list of merging two lists together, each node of each list points to the node that has its index of the other list
+    """
+    def zipLists(self, list1, list2):
+        list1_current = list1.head
+        list2_current = list2.head
+
+        while list1_current is not None and list2_current is not None: 
+            list1_next = list1_current.next
+            list2_next = list2_current.next
             
-             
+            list2_current.next = list1_next
+            list1_current.next = list2_current
 
+            list1_current = list1_next
+            list2_current = list2_next
 
+        return self.__str__()
+
+        
             
 if __name__ == "__main__":
     ll = LinkedList()
