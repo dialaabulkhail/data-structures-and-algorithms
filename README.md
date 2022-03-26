@@ -9,10 +9,10 @@ This repository in created to present all code challenges and data strucures ass
 
 | Code challenge | Folder link | PR link|
 | ----------- | ----------- | ----------- |
-| Class 01 | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code-challenge01/CODE.md) | merged |
-| Class 02 | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code-challenge02/CODE.md) | merged |
-| Class 03 | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code-challenge03/CODE.md) | merged |
-| Class 04 | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code-challenge04/CODE.md ) | merged |
+| Reverse an array | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code-challenge01/CODE.md) | merged |
+| Insert shift array | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code-challenge02/CODE.md) | merged |
+| Binary search | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code-challenge03/CODE.md) | merged |
+| Matrix | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code-challenge04/CODE.md ) | merged |
 ______________________________________________________
 
 | Data structures | Folder link | PR link|
