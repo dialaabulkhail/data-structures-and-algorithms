@@ -8,7 +8,7 @@ Methods:
 
 
 ## Whiteboard Process
-
+![](./pseudoqueue.jpg)
 
 ## Approach & Efficiency
 enqueue()--> time complexity O(1)

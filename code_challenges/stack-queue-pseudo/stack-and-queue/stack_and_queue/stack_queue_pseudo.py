@@ -1,14 +1,26 @@
 
 class Node:
+    """
+    This class is used for creating a new node with a value and a pointer to the next node.
+    """
     def __init__(self, value):
         self.value = value
         self.next = None
 
 
 
-class Stack:  # first in last out [1<-2-<-3<-4]
+class Stack: 
+    """
+    This class is used for creating a stack with top pointer to its lastley added node.
+    methods:
+    - push() --> used to add nodes to the stack following the approach of first in last out.
+    - pop() --> used to remove a node from the top of the stack.
+    - peek() --> used to return the value of the top pointer of the stack.
+    """
     def __init__(self):
         self.top = None
+
+
 
     def push(self, value):   
         node = Node(value)
@@ -34,29 +46,33 @@ class Stack:  # first in last out [1<-2-<-3<-4]
 
 
 
-class PseudoQueue:  # s1 = stack 1 # s2 = stack 2 
-    def __init__(self, s2):
-        self.s1 = Stack()
-        self.s2 = s2
+
+class PseudoQueue:  
+    """
+    This class is going to utilize 2 Stack instances to create and manage the queue.
+    methods:
+    enqueue() --> used to push the nodes to the PseudoQueue with first in first out approach.
+    dequeue() --> extracts a value from the PseudoQueue, using a first-in, first-out approach and returns the extracted value.
+    """
+    def __init__(self, stack):
+        self.stack = stack   # regular stack first in last out
+        self.new_stack = Stack()  # empty stack
+        
     
 
-
     def enqueue(self, value):
-        self.s2.push(value)
+        self.stack.push(value)
 
      
-
     def dequeue(self):
         try:
-            while self.s2.top is not None:
-                self.s1.push(self.s2.pop())
+            while self.stack.top is not None:  #[3->2->1->none]
+                self.new_stack.push(self.stack.pop()) #[1->2->3]
 
-            popped = self.s1.pop()
-
-            while self.s1.top is not None:
-                self.s2.push(self.s1.pop())
-
-            return popped
+            temp = self.new_stack.pop()  # the top of empty_stack
+            return temp
 
         except:
             raise Exception("Empty Queue")
+
+
