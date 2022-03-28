@@ -69,7 +69,7 @@ class PseudoQueue:
             while self.stack.top is not None:  #[3->2->1->none]
                 self.new_stack.push(self.stack.pop()) #[1->2->3]
 
-            temp = self.new_stack.pop()  # the top of empty_stack
+            temp = self.new_stack.pop()  # popped value, the top of empty_stack "first in enqueue"
             return temp
 
         except:
