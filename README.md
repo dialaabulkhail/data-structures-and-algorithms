@@ -17,10 +17,10 @@ ______________________________________________________
 
 | Data structures | Folder link | PR link|
 | ----------- | ----------- | ----------- |
-| Linked List | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/tree/main/linked-list ) | merged |
-| Linked List insertions| [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/linked-list/linked_list/linked_list.py) | merged |
-| Linked List kth | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/tree/main/linked-list ) | merged |
-| Linked List zip | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/tree/main/linked-list ) | merged |
+| Linked List | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/tree/main/Data_structures/linked-list ) | merged |
+| Linked List insertions| [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/tree/main/Data_structures/linked-list) | merged |
+| Linked List kth | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/tree/main/Data_structures/linked-list ) | merged |
+| Linked List zip | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/tree/main/Data_structures/linked-list ) | merged |
 | Stack and queue | [Preview]() | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/pull/11) |
 
 
