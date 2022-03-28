@@ -20,10 +20,16 @@ A Queue is a linear type of data structures that stores nodes in which the front
 ## Approach & Efficiency
 
 **Stack:**
-All methods have time and space complexity of O(1).
+push() time and space complexity of O(1).stack-queue-pseudo.
+pop() time and space complexity of O(1).stack-queue-pseudo
+peek() time and space complexity of O(1).stack-queue-pseudo
+is_empty() time and space complexity of O(1).stack-queue-pseudo
 
 **Queue:**  
-All methods of queue have time and space complexity of O(1).
+enqueue() time and space complexity of O(1).
+dequeue() time and space complexity of O(1).
+peek() time and space complexity of O(1).
+is_empty() time and space complexity of O(1).
 
 
 ## API
