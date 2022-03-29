@@ -13,7 +13,7 @@ This repository in created to present all code challenges and data strucures ass
 | Insert shift array | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/code-challenge02/CODE.md) | merged |
 | Binary search | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/code-challenge03/CODE.md) | merged |
 | Matrix | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/code-challenge04/CODE.md) | merged |
-| stack and queue pseudo | [preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/tree/main/code_challenges/stack-and-queue/stack_and_queue)| [preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/pull/16) |
+| stack and queue pseudo | will be added after merging | [preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/pull/17) |
 ______________________________________________________
 
 | Data structures | Folder link | PR link|
