@@ -13,16 +13,18 @@ This repository in created to present all code challenges and data strucures ass
 | Insert shift array | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/code-challenge02/CODE.md) | merged |
 | Binary search | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/code-challenge03/CODE.md) | merged |
 | Matrix | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/code-challenge04/CODE.md) | merged |
-| stack and queue pseudo | will be added after merging | [preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/pull/17) |
+| stack and queue pseudo | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/stack-and-queue/README.md) | merged |
+| stack and queue animal shelter | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/stack-queue-animal-shelter/README.md) | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/pull/18) |
+
 ______________________________________________________
 
 | Data structures | Folder link | PR link|
 | ----------- | ----------- | ----------- |
-| Linked List | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/tree/main/Data_structures/linked-list ) | merged |
-| Linked List insertions| [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/tree/main/Data_structures/linked-list) | merged |
-| Linked List kth | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/tree/main/Data_structures/linked-list ) | merged |
-| Linked List zip | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/tree/main/Data_structures/linked-list ) | merged |
-| Stack and queue | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/Data_structures/stack-and-queue/stack_and_queue/stack_and_queue.py) | merged |
+| Linked List | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/Data_structures/linked-list/README.md) | merged |
+| Linked List insertions| [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/Data_structures/linked-list/README.md) | merged |
+| Linked List kth | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/Data_structures/linked-list/README.md) | merged |
+| Linked List zip | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/Data_structures/linked-list/README.md ) | merged |
+| Stack and queue | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/stack-and-queue/README.md) | merged |
 
 
 
