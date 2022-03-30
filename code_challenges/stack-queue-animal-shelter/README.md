@@ -8,7 +8,7 @@ the class should have two methods of:
 - dequeue: Arguments: pref, pref can be either "dog" or "cat". Return: either a dog or a cat, based on preference. If pref is not "dog" or "cat" then return null.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![](stack-queue-animal-shelter.jpg)
 
 ## Approach & Efficiency
 The approach used was first in first out-last in last out, I used two Queue class objects one for dogs and the other for cats and I used in them the basic enqueue and dequeue from Queue class so it matches the approach of first in first out.

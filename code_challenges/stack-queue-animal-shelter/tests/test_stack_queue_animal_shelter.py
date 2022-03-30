@@ -63,3 +63,16 @@ def test_multiple_cat_dequeue():
     with pytest.raises(Exception):
         q.cat_queue.dequeue1()
 
+
+def test_wrong_enqueue():
+    q = AnimalShelter()
+    q.enqueue("bird")
+    with pytest.raises(Exception):
+        q.cat_queue.front.value
+    
+
+def test_wrong_dequeue():
+    q = AnimalShelter()
+    assert None == q.dequeue("fish")
+
+    
