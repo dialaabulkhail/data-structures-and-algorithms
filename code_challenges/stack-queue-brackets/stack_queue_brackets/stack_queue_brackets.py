@@ -39,14 +39,14 @@ Validate_brackets function is used to return a boolean of whether the string arg
 """
 def validate_brackets(string):    
 
-    openning_brackets = ['[', '{', '(']
+    opening_brackets = ['[', '{', '(']
     closing_brackets = [']', '}', ')']
-    map = dict(zip(openning_brackets, closing_brackets))   ## creates a dictionary of keys and values corresponding from open/close brackets,, the map[element] changes its value to the corresponding one
+    map = dict(zip(opening_brackets, closing_brackets))   ## creates a dictionary of keys and values corresponding from open/close brackets,, the map[element] changes its value to the corresponding one
   
     stack = Stack()
   
     for i in string:        
-        if i in openning_brackets:
+        if i in opening_brackets:
             stack.push(map[i])     ## pushes the value not the key in dictionary "the closing brakcet"
         
         elif i in closing_brackets:

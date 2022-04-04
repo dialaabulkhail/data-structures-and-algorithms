@@ -8,10 +8,12 @@ The string argument could be a set of any of the three brackets:
 - Curly Brackets : {}
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![](stack-queue-brackets.jpg)
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+validate_brackets function complexity:
+- Time complexity --> O(n)
+- Space complexity --> O(1)
 
 ## Solution
 [Link to code](./stack_queue_brackets/stack_queue_brackets.py)
