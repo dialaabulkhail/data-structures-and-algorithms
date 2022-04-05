@@ -15,7 +15,7 @@ This repository in created to present all code challenges and data strucures ass
 | Matrix | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/code-challenge04/CODE.md) | merged |
 | stack and queue pseudo | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/stack-and-queue/README.md) | merged |
 | stack and queue animal shelter | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/stack-queue-animal-shelter/README.md) | merged |
-| stack and queue animal shelter | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/stack-queue-brackets/code_challenges/stack-queue-brackets/README.md) | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/pull/19) |
+| stack and queue animal shelter | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/stack-queue-brackets/code_challenges/stack-queue-brackets/README.md) | merged |
 
 ______________________________________________________
 
