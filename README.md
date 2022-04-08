@@ -17,6 +17,8 @@ This repository in created to present all code challenges and data strucures ass
 | stack and queue animal shelter | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/stack-queue-animal-shelter/README.md) | merged |
 | stack and queue animal shelter | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/stack-queue-brackets/code_challenges/stack-queue-brackets/README.md) | merged |
 
+
+
 ______________________________________________________
 
 | Data structures | Folder link | PR link|
@@ -26,6 +28,8 @@ ______________________________________________________
 | Linked List kth | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/Data_structures/linked-list/README.md) | merged |
 | Linked List zip | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/Data_structures/linked-list/README.md ) | merged |
 | Stack and queue | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/stack-and-queue/README.md) | merged |
+| Trees | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/trees/Data_structures/trees/Trees/trees.py) | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/pull/20) |
+
 
 
 
