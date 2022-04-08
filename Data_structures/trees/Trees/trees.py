@@ -1,5 +1,4 @@
 
-
 """
 Node class is used to create a node with a value and a pointer to left and right childs.
 """
@@ -8,7 +7,6 @@ class Node():
         self.value = value
         self.left = None
         self.right = None 
-
 
 
 
@@ -47,7 +45,6 @@ class BinaryTree:
         
 
 
-
     def in_order(self):
         node = self.root
         stack = []
@@ -66,7 +63,6 @@ class BinaryTree:
         
         _recursion(node)
         return stack
-
 
 
 
@@ -94,12 +90,13 @@ class BinaryTree:
 """
 Binary search tree class is a sub-class of Binary Tree class, it is used to add nodes, and to check for existance of nodes.
 methods:
-Add(value) --> adds a new node with a value to the binary search tree in the correct order.
+Add(value) --> adds a new node with a value to the binary search tree, smaller values to the left and larger values to the right.
 contains(value) --> returns a boolean to indicate wether the value exists in a tree or not.
 """
 class BinarySearchTree(BinaryTree):
     def __init__(self):
         super().__init__()
+
 
 
     def Add(self, value):
@@ -108,7 +105,6 @@ class BinarySearchTree(BinaryTree):
 
         if self.root is None:
             self.root = node
-        
 
         while current:
             if node.value < current.value:
@@ -126,7 +122,28 @@ class BinarySearchTree(BinaryTree):
                     return
                 
 
-        
+
+    def contains(self, value):
+        node = self.root
+
+        if self.root is None:
+            raise Exception("The Tree is Empty")
+
+        if type(value) is not int:
+            raise Exception("Please provide an integer value")
+
+        while node:
+            if node.value == value:
+                return True
+            
+            if node.value > value:
+                node = node.left
+            
+            else:
+                node = node.right
+            
+        return False
+                    
 
 
 
@@ -149,8 +166,10 @@ if __name__ == "__main__":
     y.Add(19)
     y.Add(2)
 
+    print(y.contains(3))
+    print(y.contains(7))
+    print(y.contains(2))
 
-    
 
     print(y.pre_order())
     # node4 = Node(4)

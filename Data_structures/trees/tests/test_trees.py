@@ -147,10 +147,36 @@ def test_Add_orders(bst):
 
 
 
+                                            ######### Contains method Binary search tree tests #########
+
+def test_contains(bst):
+    assert True == bst.contains(5)
+    assert True == bst.contains(9)
+    assert True == bst.contains(4)
+    assert True == bst.contains(8)
+    assert True == bst.contains(10)
 
 
+def test_doesnt_contain(bst):
+    assert False == bst.contains(7)
+    assert False == bst.contains(199)
+    assert False == bst.contains(54)
+    assert False == bst.contains(0000)
 
 
+def test_empty_tree():
+    bst = BinarySearchTree()
+    with pytest.raises(Exception):
+        bst.contains()
+
+
+def test_wrong_value(bst):
+    with pytest.raises(Exception):
+        bst.contains("string")
+    
+
+
+                                            ######### Fixtures #########
 
 @pytest.fixture
 def bst():
