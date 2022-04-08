@@ -1,4 +1,5 @@
-from Trees.trees import BinaryTree, Node
+from Trees.trees import BinaryTree, Node, BinarySearchTree
+import pytest
 
                                             ######### Pre Order Binary trees tests #########
 
@@ -125,3 +126,43 @@ def test_adding_nodes_post_order():
     node8 = Node("*")
     node7.right = node8
     assert ["cat", 2, "*", 7, 3, 1] == binary.post_order()
+
+
+
+                                            ######### Add method Binary search tree tests #########
+
+def test_Add():
+    bst = BinarySearchTree()
+    bst.Add(1)
+    bst.Add(2)
+    bst.Add(3)
+    assert 1 == bst.root.value
+    assert [1, 2, 3] == bst.pre_order()
+
+
+def test_Add_orders(bst):
+    assert [9, 5, 4, 8, 10] == bst.pre_order()
+    assert [4, 5, 8, 9, 10] == bst.in_order()
+    assert [4, 8, 5, 10, 9] == bst.post_order()
+
+
+
+
+
+
+
+
+@pytest.fixture
+def bst():
+    bst = BinarySearchTree()
+    bst.Add(9)
+    bst.Add(5)
+    bst.Add(4)
+    bst.Add(8)
+    bst.Add(10)
+
+    return bst
+
+#           9
+#     5           10   
+# 4      8

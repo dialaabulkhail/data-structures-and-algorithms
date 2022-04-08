@@ -90,6 +90,46 @@ class BinaryTree:
         return stack
 
 
+
+"""
+Binary search tree class is a sub-class of Binary Tree class, it is used to add nodes, and to check for existance of nodes.
+methods:
+Add(value) --> adds a new node with a value to the binary search tree in the correct order.
+contains(value) --> returns a boolean to indicate wether the value exists in a tree or not.
+"""
+class BinarySearchTree(BinaryTree):
+    def __init__(self):
+        super().__init__()
+
+
+    def Add(self, value):
+        node = Node(value)
+        current = self.root
+
+        if self.root is None:
+            self.root = node
+        
+
+        while current:
+            if node.value < current.value:
+                if current.left:
+                    current = current.left
+                else:
+                    current.left = node
+                    return 
+
+            else:
+                if current.right:
+                    current = current.right
+                else:
+                    current.right = node
+                    return
+                
+
+        
+
+
+
     
 if __name__ == "__main__":
     node1 = Node(1)
@@ -99,13 +139,24 @@ if __name__ == "__main__":
     x = BinaryTree()
 
     x.root = node1
-    node1.left = node2
-    node1.right = node3
+    # node1.left = node2
+    # node1.right = node3
 
+    y = BinarySearchTree()
+    # y.root = node1
+    y.Add(6)
+    y.Add(7)
+    y.Add(19)
+    y.Add(2)
+
+
+    
+
+    print(y.pre_order())
     # node4 = Node(4)
     # node2.left = node4
    
     # print(x.pre_order())   # [1, 2, 3]   # [1, 2, 4, 3]
     # print(x.in_order())    # [2, 1, 3]
-    print(x.post_order())  # [2, 3, 1]
+    # print(x.post_order())  # [2, 3, 1]
   
