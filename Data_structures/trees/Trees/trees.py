@@ -53,10 +53,11 @@ class BinaryTree:
         stack = []
 
         def _recursion(node):
-            stack.append(node.value)
-
+            
             if node.left:
                 _recursion(node.left)
+               
+            stack.append(node.value)
 
             if node.right:
                 _recursion(node.right)
@@ -70,7 +71,23 @@ class BinaryTree:
 
 
     def post_order(self):
-        pass
+        node = self.root
+        stack = []
+
+        def _recursion(node):
+            
+            if node.left:
+                _recursion(node.left)
+
+            if node.right:
+                _recursion(node.right)
+
+            stack.append(node.value)
+
+            return stack
+        
+        _recursion(node)
+        return stack
 
 
     
@@ -89,6 +106,6 @@ if __name__ == "__main__":
     # node2.left = node4
    
     # print(x.pre_order())   # [1, 2, 3]   # [1, 2, 4, 3]
-    print(x.in_order())    # [2, 1, 3]
-    # print(x.post_order())  # [2, 3, 1]
+    # print(x.in_order())    # [2, 1, 3]
+    print(x.post_order())  # [2, 3, 1]
   
