@@ -42,7 +42,7 @@ class BinaryTree:
         
         _recursion(node)
         return stack
-        
+    
 
 
     def in_order(self):
@@ -85,6 +85,27 @@ class BinaryTree:
         _recursion(node)
         return stack
 
+
+
+def max_value(node): 
+    
+    if node is None:  
+        return float('-inf') 
+
+    maximum_value = node.value 
+    left_value = max_value(node.left)  
+    right_value = max_value(node.right)  
+
+    if left_value > maximum_value: 
+        maximum_value = left_value
+
+    if right_value > maximum_value:  
+        maximum_value = right_value  
+
+    return maximum_value
+     
+                
+            
 
 
 """
@@ -143,8 +164,10 @@ class BinarySearchTree(BinaryTree):
                 node = node.right
             
         return False
-                    
 
+
+
+                
 
 
     
@@ -156,8 +179,8 @@ if __name__ == "__main__":
     x = BinaryTree()
 
     x.root = node1
-    # node1.left = node2
-    # node1.right = node3
+    node1.left = node2
+    node1.right = node3
 
     y = BinarySearchTree()
     # y.root = node1
@@ -166,12 +189,13 @@ if __name__ == "__main__":
     y.Add(19)
     y.Add(2)
 
-    print(y.contains(3))
-    print(y.contains(7))
-    print(y.contains(2))
+    # print(y.contains(3))
+    # print(y.contains(7))
+    # print(y.contains(2))
+    
 
 
-    print(y.pre_order())
+    # print(y.pre_order())
     # node4 = Node(4)
     # node2.left = node4
    
@@ -179,3 +203,22 @@ if __name__ == "__main__":
     # print(x.in_order())    # [2, 1, 3]
     # print(x.post_order())  # [2, 3, 1]
   
+
+    # print(x.pre_order())
+
+    # node9 = Node(9)
+    # node2.left = node9
+    # print(x.pre_order())
+    # print(y.contains("cat"))
+
+
+    node = Node(2)  
+    node.left = Node(7)  
+    node.right = Node(5)  
+    node.left.right = Node(6)  
+    node.left.right.left = Node(1)  
+    node.left.right.right = Node(11)  
+    node.right.right = Node(9)  
+    node.right.right.left = Node(4)  
+  
+    print(max_value(node)) 

@@ -1,4 +1,4 @@
-from Trees.trees import BinaryTree, Node, BinarySearchTree
+from Trees.trees import BinaryTree, Node, BinarySearchTree, max_value
 import pytest
 
                                             ######### Pre Order Binary trees tests #########
@@ -192,3 +192,23 @@ def bst():
 #           9
 #     5           10   
 # 4      8
+
+
+def test_max_value():
+    node = Node(2)  
+    node.left = Node(7)  
+    node.right = Node(5)  
+    node.left.right = Node(6)  
+    node.left.right.left = Node(1)  
+    node.left.right.right = Node(11)  
+    node.right.right = Node(9)  
+    node.right.right.left = Node(4)  
+    assert 11 == max_value(node)
+
+def test_maxvalue():
+    node = Node(2)  
+    node.left = Node(7)  
+    node.right = Node(5)  
+    node.left.right = Node(6)  
+    node.right.left = Node(4)  
+    assert 7 == max_value(node)
