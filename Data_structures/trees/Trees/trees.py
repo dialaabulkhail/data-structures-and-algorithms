@@ -87,26 +87,31 @@ class BinaryTree:
 
 
 
-def max_value(node): 
-    
-    if node is None:  
-        return float('-inf') 
+    """
+    Max_value is a method used to return the maximum numeric value in a binary tree.
+    """
+    def maximum(self):
+        node = self.root
 
-    maximum_value = node.value 
-    left_value = max_value(node.left)  
-    right_value = max_value(node.right)  
-
-    if left_value > maximum_value: 
-        maximum_value = left_value
-
-    if right_value > maximum_value:  
-        maximum_value = right_value  
-
-    return maximum_value
-     
-                
+        def _recursion(node):
+            maximum_value = node.value
             
+            if node.left:
+                left_value =_recursion(node.left)
+                if left_value > maximum_value: 
+                    maximum_value = left_value
 
+            if node.right:
+                right_value = _recursion(node.right)
+                if right_value > maximum_value:  
+                    maximum_value = right_value
+
+            return maximum_value
+            
+        return(_recursion(node))
+        
+  
+             
 
 """
 Binary search tree class is a sub-class of Binary Tree class, it is used to add nodes, and to check for existance of nodes.
@@ -204,21 +209,12 @@ if __name__ == "__main__":
     # print(x.post_order())  # [2, 3, 1]
   
 
-    # print(x.pre_order())
 
-    # node9 = Node(9)
-    # node2.left = node9
+    node9 = Node(9)
+    node2.left = node9
     # print(x.pre_order())
     # print(y.contains("cat"))
+    print(x.pre_order())
+    print(x.maximum())
 
 
-    node = Node(2)  
-    node.left = Node(7)  
-    node.right = Node(5)  
-    node.left.right = Node(6)  
-    node.left.right.left = Node(1)  
-    node.left.right.right = Node(11)  
-    node.right.right = Node(9)  
-    node.right.right.left = Node(4)  
-  
-    print(max_value(node)) 
