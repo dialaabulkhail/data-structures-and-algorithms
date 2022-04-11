@@ -41,13 +41,13 @@ def validate_brackets(string):
 
     opening_brackets = ['[', '{', '(']
     closing_brackets = [']', '}', ')']
-    map = dict(zip(opening_brackets, closing_brackets))   ## creates a dictionary of keys and values corresponding from open/close brackets,, the map[element] changes its value to the corresponding one
+    dictionary = dict(zip(opening_brackets, closing_brackets))   ## creates a dictionary of keys and values corresponding from open/close brackets,, the dictionary[element] changes its value to the corresponding one
   
     stack = Stack()
   
     for i in string:        
         if i in opening_brackets:
-            stack.push(map[i])     ## pushes the value not the key in dictionary "the closing brakcet"
+            stack.push(dictionary[i])     ## pushes the value not the key in dictionary "the closing brakcet"
         
         elif i in closing_brackets:
             if stack.top is not None and i == stack.top.value:    ## closing brakcet must equal the value pushed above
