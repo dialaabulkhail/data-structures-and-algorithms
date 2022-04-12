@@ -42,7 +42,7 @@ class BinaryTree:
         
         _recursion(node)
         return stack
-        
+    
 
 
     def in_order(self):
@@ -86,6 +86,32 @@ class BinaryTree:
         return stack
 
 
+
+    """
+    Max_value is a method used to return the maximum numeric value in a binary tree.
+    """
+    def maximum(self):
+        node = self.root
+
+        def _recursion(node):
+            maximum_value = node.value
+            
+            if node.left:
+                left_value =_recursion(node.left)
+                if left_value > maximum_value: 
+                    maximum_value = left_value
+
+            if node.right:
+                right_value = _recursion(node.right)
+                if right_value > maximum_value:  
+                    maximum_value = right_value
+
+            return maximum_value
+            
+        return(_recursion(node))
+        
+  
+             
 
 """
 Binary search tree class is a sub-class of Binary Tree class, it is used to add nodes, and to check for existance of nodes.
@@ -143,8 +169,10 @@ class BinarySearchTree(BinaryTree):
                 node = node.right
             
         return False
-                    
 
+
+
+                
 
 
     
@@ -156,8 +184,8 @@ if __name__ == "__main__":
     x = BinaryTree()
 
     x.root = node1
-    # node1.left = node2
-    # node1.right = node3
+    node1.left = node2
+    node1.right = node3
 
     y = BinarySearchTree()
     # y.root = node1
@@ -166,12 +194,13 @@ if __name__ == "__main__":
     y.Add(19)
     y.Add(2)
 
-    print(y.contains(3))
-    print(y.contains(7))
-    print(y.contains(2))
+    # print(y.contains(3))
+    # print(y.contains(7))
+    # print(y.contains(2))
+    
 
 
-    print(y.pre_order())
+    # print(y.pre_order())
     # node4 = Node(4)
     # node2.left = node4
    
@@ -179,3 +208,13 @@ if __name__ == "__main__":
     # print(x.in_order())    # [2, 1, 3]
     # print(x.post_order())  # [2, 3, 1]
   
+
+
+    node9 = Node(9)
+    node2.left = node9
+    # print(x.pre_order())
+    # print(y.contains("cat"))
+    print(x.pre_order())
+    print(x.maximum())
+
+

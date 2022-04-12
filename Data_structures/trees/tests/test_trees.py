@@ -192,3 +192,37 @@ def bst():
 #           9
 #     5           10   
 # 4      8
+
+
+                                            ######### Max_value method Binary tree tests #########
+
+
+def test_maximum():
+    node1 = Node(1)
+    node2 = Node(2)
+    node3 = Node(3)
+
+    binary = BinaryTree()
+
+    binary.root = node1
+    node1.left = node2
+    node1.right = node3
+
+    assert 3 == binary.maximum()
+
+
+def test_max_value_of_given_tree():
+    binary = BinaryTree()
+    node = Node(2)  
+    binary.root  = node
+    node.left = Node(7)  
+    node.right = Node(5)  
+    node.left.right = Node(6)  
+    node.left.right.left = Node(1)  
+    node.left.right.right = Node(11)  
+    node.right.right = Node(9)  
+    node.right.right.left = Node(4)  
+    assert 11 == binary.maximum()
+
+
+ 
