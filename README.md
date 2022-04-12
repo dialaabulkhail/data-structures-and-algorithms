@@ -29,5 +29,5 @@ ______________________________________________________
 | Linked List zip | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/Data_structures/linked-list/README.md ) | merged |
 | Stack and queue | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/stack-and-queue/README.md) | merged |
 | Trees | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/trees/Data_structures/trees/Trees/trees.py) | merged |
-| Tree max | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/trees/Data_structures/trees/Trees/trees.py) | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/pull/21) |
+| Tree max | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/trees/Data_structures/trees/Trees/trees.py) | merged |
 
