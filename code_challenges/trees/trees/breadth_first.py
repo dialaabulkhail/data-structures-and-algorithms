@@ -6,45 +6,6 @@ class Node:
         self.value = value
         self.left = None
         self.right = None
-        self.next = None
-
-
-class Queue:
-    def __init__(self):
-        self.front = None
-        self.rear = None
-
-
-    def is_empty(self):
-        if self.front == None:
-            return True
-        return False
-
-
-    def enqueue(self, node):
-        newNode = node
-        if self.is_empty():
-            self.front = newNode
-            self.rear = newNode
-        else:
-            self.rear.next = newNode
-            self.rear = newNode
-
-
-    def dequeue(self):
-        if not self.is_empty():
-            temp = self.front
-            self.front = self.front.next
-            temp.next = None
-            return temp
-        else:
-            return None
-
-
-    def peek(self):
-        if not self.is_empty():
-            return self.front.value
-        return None
 
 
 
@@ -55,28 +16,43 @@ class BinaryTree:
     def __init__(self):
         self.root = None
 
+
     """
     breadth_first method takes tree as an argument and returns list of all values in the tree, in the order they were encountered.
     the input tree is going to be traversed in breadth_first approach
     """
+    def breadth_first(tree):
+        node = tree.root
+        stack = [node]
+        values = []
 
-    @staticmethod
-    def breadth_first(tree, node = None, array = None):
-        q = Queue()
-        if array is None:
-            array = []
-        if tree.root:
-            q.enqueue(tree.root)
+        if stack is None:
+            raise Exception("Empty tree")
+        while stack:
+            value = stack.pop(0)
+            values.append(value.value)
 
-        while q.peek():
-            node_front = q.dequeue()
-            array.append(node_front.value)
+            if value.left:
+                stack.append(value.left)
+            if value.right:
+                stack.append(value.right)
 
-            if node_front.left:
-                q.enqueue(node_front.left)
-            if node_front.right:
-                q.enqueue(node_front.right)
+        return values
+        
 
-        return array
 
-    
+ 
+if __name__ == "__main__":
+    tree = BinaryTree()
+    tree.root = Node(2)
+    tree.root.left = Node(7)
+    tree.root.right = Node(5)
+    tree.root.left.left = Node(2)
+    tree.root.left.right = Node(6)
+    tree.root.right.right = Node(9)
+    tree.root.left.right.left = Node(5)
+    tree.root.left.right.right = Node(11)
+    tree.root.right.right.left = Node(4)
+
+    print(BinaryTree.breadth_first(tree))
+

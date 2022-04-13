@@ -5,10 +5,11 @@ Write a function called breadth first
 - NOTE: Traverse the input tree using a Breadth-first approach
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![](breadth_first.jpg)
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Big O of space for Breadth_first method is O(1)
+Big O of time for Breadth_firt method is O(n)
 
 ## Solution
 [Link to code](./trees/breadth_first.py)

@@ -1,27 +1,49 @@
 from trees.breadth_first import Node, BinaryTree
+import pytest
 
-def test_breadth_first_binarytree_empty():
+
+
+def test_breadth_first_empty():
     tree = BinaryTree()
-    assert BinaryTree.breadth_first(tree) == []
+    with pytest.raises(Exception):
+        BinaryTree.breadth_first(tree)
 
 
-def test_breadth_first_binarytree_one_element():
+
+def test_breadth_first_single_element():
     tree = BinaryTree()
     tree.root = Node(8)
     assert BinaryTree.breadth_first(tree) == [8]
 
 
-def test_breadth_first_binarytree_with_letters():
+
+def test_lab_values():
     tree = BinaryTree()
-    tree.root = Node(8)
+    tree.root = Node(2)
+    tree.root.left = Node(7)
+    tree.root.right = Node(5)
+    tree.root.left.left = Node(2)
+    tree.root.left.right = Node(6)
+    tree.root.right.right = Node(9)
+    tree.root.left.right.left = Node(5)
+    tree.root.left.right.right = Node(11)
+    tree.root.right.right.left = Node(4)
+    assert [2,7,5,2,6,9,5,11,4] == BinaryTree.breadth_first(tree)
+
+
+
+def test_breadth_first_value_types():
+    tree = BinaryTree()
+    tree.root = Node(5)
     tree.root.left = Node("a")
-    tree.root.right = Node(-2)
-    assert BinaryTree.breadth_first(tree) == [8, "a", -2]
-    tree.root.left.left = Node(195)
+    tree.root.right = Node(False)
+    assert BinaryTree.breadth_first(tree) == [5, "a", False]
+
+    tree.root.left.left = Node(100)
     tree.root.left.right = Node("cat")
     tree.root.right.right = Node(8)
     tree.root.left.left.left = Node(-0.56)
-    tree.root.left.left.right = Node(9)
-    tree.root.right.right.right = Node(23)
-    tree.root.right.right.right.left = Node([5, 7])
-    assert BinaryTree.breadth_first(tree) == [8, "a", -2, 195,"cat", 8, -0.56, 9, 23, [5,7]]
+    tree.root.left.left.right = Node(True)
+    tree.root.right.right.right = Node("fun")
+    tree.root.right.right.right.left = Node([7, 7])
+    assert BinaryTree.breadth_first(tree) == [5, "a", False, 100,"cat", 8, -0.56, True, "fun", [7,7]]
