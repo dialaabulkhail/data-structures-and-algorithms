@@ -13,9 +13,10 @@ This repository in created to present all code challenges and data strucures ass
 | Insert shift array | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/code-challenge02/CODE.md) | merged |
 | Binary search | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/code-challenge03/CODE.md) | merged |
 | Matrix | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/code-challenge04/CODE.md) | merged |
-| stack and queue pseudo | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/stack-and-queue/README.md) | merged |
-| stack and queue animal shelter | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/stack-queue-animal-shelter/README.md) | merged |
-| stack and queue animal shelter | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/stack-queue-brackets/code_challenges/stack-queue-brackets/README.md) | merged |
+| Stack and queue pseudo | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/stack-and-queue/README.md) | merged |
+| Stack and queue animal shelter | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/stack-queue-animal-shelter/README.md) | merged |
+| Stack and queue animal shelter | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/stack-queue-brackets/code_challenges/stack-queue-brackets/README.md) | merged |
+| Tree Breadth irst | [Preview]() | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/pull/22) |
 
 
 
