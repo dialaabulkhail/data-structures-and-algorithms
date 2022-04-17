@@ -17,27 +17,29 @@ class BinaryTree:
         self.root = None
 
 
-    """
-    breadth_first method takes tree as an argument and returns list of all values in the tree, in the order they were encountered.
-    the input tree is going to be traversed in breadth_first approach
-    """
-    def breadth_first(tree):
-        node = tree.root
-        stack = [node]
-        values = []
 
-        if stack is None:
-            raise Exception("Empty tree")
-        while stack:
-            value = stack.pop(0)
-            values.append(value.value)
 
-            if value.left:
-                stack.append(value.left)
-            if value.right:
-                stack.append(value.right)
+"""
+breadth_first function takes tree as an argument and returns list of all values in the tree, in the order they were encountered.
+the input tree is going to be traversed in breadth_first approach
+"""
+def breadth_first(tree):
+    node = tree.root
+    stack = [node]
+    values = []
 
-        return values
+    if stack is None:
+        raise Exception("Empty tree")
+    while stack:
+        value = stack.pop(0)
+        values.append(value.value)
+
+        if value.left:
+            stack.append(value.left)
+        if value.right:
+            stack.append(value.right)
+
+    return values
         
 
 
@@ -54,5 +56,5 @@ if __name__ == "__main__":
     tree.root.left.right.right = Node(11)
     tree.root.right.right.left = Node(4)
 
-    print(BinaryTree.breadth_first(tree))
+    print(breadth_first(tree))
 
