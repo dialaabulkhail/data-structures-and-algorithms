@@ -10,7 +10,7 @@ Write a function called fizz buzz tree
 4. If the value is not divisible by 3 or 5, simply turn the number into a String.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![](tree-fizz-buzz.jpg)
 
 ## Approach & Efficiency
 Big O of space for fizzbuzz_tree function is O(1)
