@@ -8,15 +8,12 @@ class Node:
         self.right = None
 
 
-
 """
 Binary Tree class is used to initialize a tree.
 """
 class BinaryTree:
     def __init__(self):
         self.root = None
-
-
 
 
 """
@@ -42,6 +39,20 @@ def breadth_first(tree):
     return values
         
 
+def fizzbuzz():
+    b = breadth_first()
+    for i in b.values:
+        if not i % 3:
+            i = "Fizz"
+        elif not i % 5:
+            i = "Buzz"
+        elif not i % 3 & i % 5:
+            i = "FizzBuzz"
+        else:
+            i = f"{i}"
+    
+    return b.values
+
 
  
 if __name__ == "__main__":
@@ -57,4 +68,3 @@ if __name__ == "__main__":
     tree.root.right.right.left = Node(4)
 
     print(breadth_first(tree))
-
