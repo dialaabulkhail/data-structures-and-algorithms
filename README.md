@@ -32,4 +32,6 @@ ______________________________________________________
 | Stack and queue | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/stack-and-queue/README.md) | merged |
 | Trees | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/trees/Data_structures/trees/Trees/trees.py) | merged |
 | Tree max | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/trees/Data_structures/trees/Trees/trees.py) | merged |
+| HashTable | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/tree/main/Data_structures/hash-tables) | merged |
+
 
