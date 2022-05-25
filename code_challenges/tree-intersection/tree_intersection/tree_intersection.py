@@ -24,9 +24,20 @@ class HashTable:
             self.map[hashed].append([key, value])
 
 
+
     def get(self, key):
         hashed = self.hash(key)
         return self.map[hashed][0][1]
+
+
+
+
+    def contains(self, key):
+        hashed = self.hash(key)
+        if self.map[hashed][1][0] == key:
+            return True
+        else:
+            return False
 
 
 
@@ -43,53 +54,31 @@ class Tree:
 
 
 
-def trees_intersection(t1,t2):
-    node1 = t1.root.value
-    node2 = t2.root.value
-    lst = []
-    h = HashTable()
+def trees_intersection(t1, t2):
+    if t1.root is None or t2.root is None:
+        raise Exception ("Tree is empty")
 
-    def _t1(node1,node2):
-        h.set(str(node1), node1)
-        lst.append(h.get(str(node2)))
+    hashtable = HashTable()
+    result = []
 
-        
 
-        return lst
+    def _traverse(root):
+        if hashtable.contains(str(root.value)) is True:
+            result.append(root.value)
+        else:
+            hashtable.set(str(root.value), True)
 
-    _t1(node1, node2)
-    return lst
+        if root.left:
+            _traverse(root.left)
+        if root.right:
+            _traverse(root.right)
 
-    # return h.get(str(node1))
 
-    # def _traverse1(node1):
-    #     h.set(str(node1.value), node1)
+    _traverse(t1.root)
+    _traverse(t2.root)
 
-    #     if node1.left:
-    #         _traverse1(node1.left)
+    return result
 
-    #     if node1.right:
-    #         _traverse1(node1.rigth)
-
-        # return
-
-    # def _traverse2(node2):
-    #     try:
-    #         lst.append(hash.get(str(node2.value)))
-    #     except:
-    #         return None
-
-    #     if node2.left:
-    #         _traverse2(node2.left)
-
-    #     if node2.right:
-    #         _traverse2(node2.right)
-
-    #     return
-
-    # _traverse1(node1)
-    # _traverse2(node2)
-    # return lst
 
 
 
@@ -104,7 +93,6 @@ if __name__ == '__main__':
     node6 = Node(8)
 
 
-
     t1 = Tree()
     t1.root = node5
     node1.left = node3
@@ -115,7 +103,7 @@ if __name__ == '__main__':
 
     t2 = Tree()
     t2.root = node5
-    node1.left = node1
+    node1.left = node3
     node1.right = node6
     node2.left = node5
   
