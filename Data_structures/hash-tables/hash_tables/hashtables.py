@@ -67,27 +67,22 @@ if __name__ == "__main__":
     h = HashTable()
     # print(h.hash("true"))
 
-
     h.set("hello", "world")
     h.set("hello", "mom")
 
     x = h.set("welcome", "home")
     h.set("holle", "user")
     h.set("friday", "night")
-
     
     # for item in enumerate(h.map):
     #    print(item)
-
 
     # print(h.get("hello"))
     # print(h.get("friday"))
     # print(h.get("hoell"))
 
-
     # print(h.contains("hello"))
     # print(h.contains("hi"))
-
 
     print(h.keys)
 
