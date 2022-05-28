@@ -15,7 +15,7 @@ class Queue:
         self.front = None
 
 
-    def enqueue1(self, value):
+    def enqueue(self, value):
         node = Node(value)
         if not self.front:
             self.front = node
@@ -25,7 +25,7 @@ class Queue:
         self.rear = node
 
 
-    def dequeue1(self):
+    def dequeue(self):
         if not self.front:
             raise Exception("Empty Queue")
         
@@ -53,6 +53,15 @@ enqueue(): takes one arguement "animal" either cat or dog, if cat it adds it in 
 dequeue(): takes one argument "pref" either a cat or a dog, if cat it removes it from cat_queue and returns the removed value
                                                             if dog it removes it form dog_queue and returns the removed value
 """
+
+
+class Cat:
+    pass
+
+class Dog:
+    pass
+
+
 class AnimalShelter:
     def __init__(self):
         self.cat_queue = Queue()
@@ -60,13 +69,12 @@ class AnimalShelter:
 
 
 
-
     def enqueue(self, animal):
         try:
-            if animal == "cat":
-                self.cat_queue.enqueue1(animal)
-            elif animal == "dog":
-                self.dog_queue.enqueue1(animal)
+            if type(animal) == Cat:
+                self.cat_queue.enqueue(animal)
+            elif type(animal) == Dog:
+                self.dog_queue.enqueue(animal)
 
         except:
             raise Exception("Animal is not cat nor dog")
@@ -76,10 +84,14 @@ class AnimalShelter:
     def dequeue(self, pref):
         try:
             self.pref = pref
-            if self.pref == "cat":
-                self.cat_queue.dequeue1()
+
+            if pref == "cat":
+                cat = self.cat_queue.dequeue()
+                return cat
+
             elif self.pref == "dog":
-                self.dog_queue.dequeue1()
+                dog = self.dog_queue.dequeue()
+                return dog
 
         except:
             return None
@@ -94,11 +106,17 @@ if __name__ == "__main__":
 
     q.enqueue("cat")
     q.enqueue("cat")
-    print(q.cat_queue.front.value)
+    # print(q.cat_queue.front.value)
 
     q.enqueue("dog")
     q.dequeue("dog")
-    print(q.dog_queue.dequeue1())
+    print(q.dog_queue.dequeue())
 
     q.dequeue("dog")
-    print(q.dog_queue.dequeue1())
+    print(q.dog_queue.dequeue())
+
+    # q = AnimalShelter()
+    # q.enqueue("cat")
+    # q.enqueue("cat")
+
+    # print(q.dequeue("cat"))
