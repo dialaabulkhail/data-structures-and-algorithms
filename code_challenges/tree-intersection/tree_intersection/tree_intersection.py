@@ -19,6 +19,7 @@ class HashTable:
         if self.map[hashed] is None:
             self.map[hashed] = [[key, value]]
         
+        
         else: 
             self.map[hashed].append([key, value])
 
