@@ -69,8 +69,8 @@ def trees_intersection(t1, t2):
 
         if node.left:
             _traverse(node.left)
-        # if node.right:
-        #     _traverse(node.right)
+        if node.right:
+            _traverse(node.right)
 
 
     _traverse(t1.root)
