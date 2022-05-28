@@ -6,9 +6,8 @@ class HashTable:
 
     def hash(self, key):
         ascii_sum = 0
-        for char in key:
-            ascii_char = ord(char)
-            ascii_sum += ascii_char
+        ascii_char = ord(key)
+        ascii_sum += ascii_char
         
         hashed = (ascii_sum * 19) % self.size
         return hashed
@@ -27,14 +26,14 @@ class HashTable:
 
     def get(self, key):
         hashed = self.hash(key)
-        return self.map[hashed][0][1]
+        return self.map[hashed]
 
 
 
 
     def contains(self, key):
         hashed = self.hash(key)
-        if self.map[hashed][1][0] == key:
+        if self.map[hashed]:
             return True
         else:
             return False
@@ -62,16 +61,16 @@ def trees_intersection(t1, t2):
     result = []
 
 
-    def _traverse(root):
-        if hashtable.contains(str(root.value)) is True:
-            result.append(root.value)
+    def _traverse(node):
+        if hashtable.contains(str(node.value)):
+            result.append(node.value)
         else:
-            hashtable.set(str(root.value), True)
+            hashtable.set(str(node.value), True)
 
-        if root.left:
-            _traverse(root.left)
-        if root.right:
-            _traverse(root.right)
+        if node.left:
+            _traverse(node.left)
+        # if node.right:
+        #     _traverse(node.right)
 
 
     _traverse(t1.root)
@@ -94,17 +93,22 @@ if __name__ == '__main__':
 
 
     t1 = Tree()
-    t1.root = node5
-    node1.left = node3
-    node1.right = node2
-    node2.left = node1
-    node2.right = node4
+    t1.root = node1
+    node1.left = node2
+    node1.right = node3
+    node2.left = node4
+    node2.right = node5
+    node3.right = node6
+
 
 
     t2 = Tree()
-    t2.root = node5
-    node1.left = node3
-    node1.right = node6
-    node2.left = node5
+    t2.root = node2
+    node2.left = node1
+    node2.right = node3
+    node3.left = node5
+    node3.right = node1
+
   
-    print(trees_intersection(t1,t2))
+    # print(trees_intersection(t1,t2))
+    

@@ -6,7 +6,7 @@ as arguments and return set of repeated values in both trees using hashmap imple
 - Output: set of repeated values
 
 ## Whiteboard Process
-![](./tree_intersection.jpg)
+![](/hashmap_trees.jpg)
 
 ## Approach & Efficiency
 - Time complexity of tree_instersectino method -> O(n)
