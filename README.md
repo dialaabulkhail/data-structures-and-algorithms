@@ -19,6 +19,13 @@ This repository in created to present all code challenges and data strucures ass
 | Tree Breadth first | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/trees/trees/breadth_first.py) | merged |
 | Tree odd summation | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/trees/README_odd-summation.md) | merged |
 | Tree fizzbuzz | [preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/trees/README_fizzbuzz.md) | Merged |
+| Inserttion sort | [preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/code-challenge26/code_challenge26/insertion_sort.py) | Merged |
+| Merge sort | [preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/code-challenge27/code_challenge27/merge_sort.py) | Merged |
+| Repeated word | [preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/code-challenge31/repeated-word/repeated_word/repeated_word.py) | Merged |
+| Tree intersection | [preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/hash_tree_intersection/tree_intersection/tree_intersection.py) | Merged |
+| Quick sort | [preview]() | Merged |
+
+
 
 
 
