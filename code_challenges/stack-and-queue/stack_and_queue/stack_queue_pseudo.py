@@ -60,9 +60,10 @@ class PseudoQueue:
         
     
 
-    def enqueue(self, value):
+    def enqueue(self, value):  
         self.stack.push(value)
-
+       
+      
      
     def dequeue(self):
         try:
@@ -71,8 +72,7 @@ class PseudoQueue:
 
             temp = self.new_stack.pop()  # popped value, the top of empty_stack "first in enqueue"
             return temp
-
+    
         except:
             raise Exception("Empty Queue")
-
-
+  
