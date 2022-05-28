@@ -41,24 +41,25 @@ class HashTable:
     """
     def get(self, key):
         hashed = self.hash(key)
-        return self.map[hashed][0][1]
+        return self.map[hashed]
 
 
 
     def contains(self, key):
-        try:
-            hashed = self.hash(key)
-            if self.map[hashed][1][0] == key:
-                return True
-        except:
-            raise Exception("key not found")
+        if self.map[self.hash(key)]:
+            return True
+        
+        else:
+            return False
 
 
 
     def keys(self):
+        lst = []
         for i in self.map:
-            if i is not None:
-                return i[0][1]
+            if i:
+                [lst.append(index[0]) for index in i]
+        return lst
 
 
 
@@ -84,7 +85,9 @@ if __name__ == "__main__":
     # print(h.contains("hello"))
     # print(h.contains("hi"))
 
-    print(h.keys)
+    print(h.keys())
+
+    # print(h.contains('hello'))
 
 
 
