@@ -23,7 +23,8 @@ This repository in created to present all code challenges and data strucures ass
 | Merge sort | [preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/code-challenge27/code_challenge27/merge_sort.py) | Merged |
 | Repeated word | [preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/code-challenge31/repeated-word/repeated_word/repeated_word.py) | Merged |
 | Tree intersection | [preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/hash_tree_intersection/tree_intersection/tree_intersection.py) | Merged |
-| Quick sort | [preview]() | Merged |
+| Quick sort | [preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/code-challenge28/code_challenge28/quick_sort.py) | Merged |
+| Left join hashtabe | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/hashmap-left-join/code_challenges/left-join-hashmaps/left_join_hashmap/left_join_hashmap.py) | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/pull/39) |
 
 
 
