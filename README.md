@@ -7,7 +7,7 @@ This repository in created to present all code challenges and data strucures ass
 
 ### Table of content
 
-| Code challenge | Folder link | PR link|
+| Code challenge | Code link | PR link|
 | ----------- | ----------- | ----------- |
 | Reverse an array | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/code-challenge01/CODE.md) | merged |
 | Insert shift array | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/code_challenges/code-challenge02/CODE.md) | merged |
@@ -32,7 +32,7 @@ This repository in created to present all code challenges and data strucures ass
 
 ______________________________________________________
 
-| Data structures | Folder link | PR link|
+| Data structures | Code link | PR link|
 | ----------- | ----------- | ----------- |
 | Linked List | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/Data_structures/linked-list/README.md) | merged |
 | Linked List insertions| [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/main/Data_structures/linked-list/README.md) | merged |
