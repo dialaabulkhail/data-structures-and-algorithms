@@ -42,7 +42,7 @@ ______________________________________________________
 | Trees | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/trees/Data_structures/trees/Trees/trees.py) | merged |
 | Tree max | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/blob/trees/Data_structures/trees/Trees/trees.py) | merged |
 | HashTable | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/tree/main/Data_structures/hash-tables) | merged |
-| Graphs | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/tree/main/Data_structures/graphs) | merged |
+| Graphs | [Preview](https://github.com/dialaabulkhail/data-structures-and-algorithms/tree/main/Data_structures/grapghs) | merged |
 
 
 
